@@ -1,0 +1,90 @@
+[
+	{
+		"file": "D:\\Developing\\Soft\\UnrealProjects\\GameProject\\Source\\GameProject\\CuttingDamageType.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\Developing\\Soft\\UnrealProjects\\GameProject\\.vscode\\compileCommands_Default\\GameProject.257.rsp"
+		],
+		"directory": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Developing\\Soft\\UnrealProjects\\GameProject\\Source\\GameProject\\CuttingDamageType.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\Developing\\Soft\\UnrealProjects\\GameProject\\.vscode\\compileCommands_Default\\GameProject.257.rsp"
+		],
+		"directory": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Developing\\Soft\\UnrealProjects\\GameProject\\Source\\GameProject\\GameProject.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\Developing\\Soft\\UnrealProjects\\GameProject\\.vscode\\compileCommands_Default\\GameProject.257.rsp"
+		],
+		"directory": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Developing\\Soft\\UnrealProjects\\GameProject\\Source\\GameProject\\GameProject.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\Developing\\Soft\\UnrealProjects\\GameProject\\.vscode\\compileCommands_Default\\GameProject.257.rsp"
+		],
+		"directory": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Developing\\Soft\\UnrealProjects\\GameProject\\Source\\GameProject\\GameProject.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\Developing\\Soft\\UnrealProjects\\GameProject\\.vscode\\compileCommands_Default\\GameProject.257.rsp"
+		],
+		"directory": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Developing\\Soft\\UnrealProjects\\GameProject\\Source\\GameProject\\MainCharacterController.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\Developing\\Soft\\UnrealProjects\\GameProject\\.vscode\\compileCommands_Default\\GameProject.257.rsp"
+		],
+		"directory": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Developing\\Soft\\UnrealProjects\\GameProject\\Source\\GameProject\\MainCharacterController.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\Developing\\Soft\\UnrealProjects\\GameProject\\.vscode\\compileCommands_Default\\GameProject.257.rsp"
+		],
+		"directory": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Developing\\Soft\\UnrealProjects\\GameProject\\Source\\GameProject\\PlayerCharacter.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\Developing\\Soft\\UnrealProjects\\GameProject\\.vscode\\compileCommands_Default\\GameProject.257.rsp"
+		],
+		"directory": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Developing\\Soft\\UnrealProjects\\GameProject\\Source\\GameProject\\PlayerCharacter.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\Developing\\Soft\\UnrealProjects\\GameProject\\.vscode\\compileCommands_Default\\GameProject.257.rsp"
+		],
+		"directory": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Developing\\Soft\\UnrealProjects\\GameProject\\Source\\GameProject\\SlashDamage.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\Developing\\Soft\\UnrealProjects\\GameProject\\.vscode\\compileCommands_Default\\GameProject.257.rsp"
+		],
+		"directory": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Developing\\Soft\\UnrealProjects\\GameProject\\Source\\GameProject\\SlashDamage.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\Developing\\Soft\\UnrealProjects\\GameProject\\.vscode\\compileCommands_Default\\GameProject.257.rsp"
+		],
+		"directory": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Source"
+	}
+]

@@ -1,0 +1,152 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch GameProject (Debug)",
+			"request": "launch",
+			"program": "D:\\Developing\\Soft\\UnrealProjects\\GameProject\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+			"preLaunchTask": "GameProject Win64 Debug Build",
+			"args": [
+			],
+			"cwd": "D:\\Developing\\Soft\\UE_5.1",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "D:\\Developing\\Soft\\UE_5.1"
+			}
+		},
+		{
+			"name": "Launch GameProject (DebugGame)",
+			"request": "launch",
+			"program": "D:\\Developing\\Soft\\UnrealProjects\\GameProject\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+			"preLaunchTask": "GameProject Win64 DebugGame Build",
+			"args": [
+			],
+			"cwd": "D:\\Developing\\Soft\\UE_5.1",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "D:\\Developing\\Soft\\UE_5.1"
+			}
+		},
+		{
+			"name": "Launch GameProject (Development)",
+			"request": "launch",
+			"program": "D:\\Developing\\Soft\\UnrealProjects\\GameProject\\Binaries\\Win64\\UnrealGame.exe",
+			"preLaunchTask": "GameProject Win64 Development Build",
+			"args": [
+			],
+			"cwd": "D:\\Developing\\Soft\\UE_5.1",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "D:\\Developing\\Soft\\UE_5.1"
+			}
+		},
+		{
+			"name": "Launch GameProject (Test)",
+			"request": "launch",
+			"program": "D:\\Developing\\Soft\\UnrealProjects\\GameProject\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+			"preLaunchTask": "GameProject Win64 Test Build",
+			"args": [
+			],
+			"cwd": "D:\\Developing\\Soft\\UE_5.1",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "D:\\Developing\\Soft\\UE_5.1"
+			}
+		},
+		{
+			"name": "Launch GameProject (Shipping)",
+			"request": "launch",
+			"program": "D:\\Developing\\Soft\\UnrealProjects\\GameProject\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+			"preLaunchTask": "GameProject Win64 Shipping Build",
+			"args": [
+			],
+			"cwd": "D:\\Developing\\Soft\\UE_5.1",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "D:\\Developing\\Soft\\UE_5.1"
+			}
+		},
+		{
+			"name": "Launch GameProjectEditor (Debug)",
+			"request": "launch",
+			"program": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+			"preLaunchTask": "GameProjectEditor Win64 Debug Build",
+			"args": [
+				"D:\\Developing\\Soft\\UnrealProjects\\GameProject\\GameProject.uproject"
+			],
+			"cwd": "D:\\Developing\\Soft\\UE_5.1",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "D:\\Developing\\Soft\\UE_5.1"
+			}
+		},
+		{
+			"name": "Launch GameProjectEditor (DebugGame)",
+			"request": "launch",
+			"program": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+			"preLaunchTask": "GameProjectEditor Win64 DebugGame Build",
+			"args": [
+				"D:\\Developing\\Soft\\UnrealProjects\\GameProject\\GameProject.uproject"
+			],
+			"cwd": "D:\\Developing\\Soft\\UE_5.1",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "D:\\Developing\\Soft\\UE_5.1"
+			}
+		},
+		{
+			"name": "Launch GameProjectEditor (Development)",
+			"request": "launch",
+			"program": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+			"preLaunchTask": "GameProjectEditor Win64 Development Build",
+			"args": [
+				"D:\\Developing\\Soft\\UnrealProjects\\GameProject\\GameProject.uproject"
+			],
+			"cwd": "D:\\Developing\\Soft\\UE_5.1",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "D:\\Developing\\Soft\\UE_5.1"
+			}
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "coreclr",
+			"request": "launch",
+			"program": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=D:\\Developing\\Soft\\UnrealProjects\\GameProject\\GameProject.uproject",
+				"-game",
+				"-engine"
+			],
+			"console": "externalTerminal",
+			"stopAtEntry": false,
+			"cwd": "D:\\Developing\\Soft\\UE_5.1"
+		}
+	]
+}
