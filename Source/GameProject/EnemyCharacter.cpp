@@ -5,12 +5,12 @@
 #include "Components/SphereComponent.h"
 
 AEnemyCharacter::AEnemyCharacter() {
-    TriggerArea = this->FindComponentByClass<USphereComponent>();
-    TriggerArea->OnComponentBeginOverlap.AddDynamic(this, &AEnemyCharacter::OnOverlapBegin); 
+    
 }
 void AEnemyCharacter::BeginPlay() {
     Super::BeginPlay();
-
+    TriggerArea = this->FindComponentByClass<USphereComponent>();
+    TriggerArea->OnComponentBeginOverlap.AddDynamic(this, &AEnemyCharacter::OnOverlapBegin); 
 }
 
 void AEnemyCharacter::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult){
