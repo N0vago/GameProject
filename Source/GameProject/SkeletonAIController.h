@@ -15,7 +15,16 @@ class GAMEPROJECT_API ASkeletonAIController : public AAIController
 	GENERATED_BODY()
 	public:
 	virtual void Tick(float DeltaTime) override;
+
+	void OnEnemyOverlapBegin(AActor* OtherActor);
+
+	void OnEnemyOverlapEnd();
+	protected:
+	virtual void BeginPlay() override;
 	private:
 	UPROPERTY(EditDefaultsOnly)
 	UBehaviorTree* SkeletonBT;
+
+
+
 };

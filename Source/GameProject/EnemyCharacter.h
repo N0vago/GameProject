@@ -14,12 +14,21 @@ class GAMEPROJECT_API AEnemyCharacter : public APlayerCharacter
 {
 	GENERATED_BODY()
 	public:
+	//Enemy character constructor
 	AEnemyCharacter();
-	AActor* PlayerActor;
-	protected:
+
+	//Trigger area of enemy character
+	UPROPERTY(VisibleAnywhere)
 	class USphereComponent* TriggerArea;
+
+	//Overlapping events
+	UFUNCTION()
+	void OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+	UFUNCTION()
+	void OnOverlapEnd(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+
+	protected:
+
 	virtual void BeginPlay() override;
 
-	private:
-	void OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 };

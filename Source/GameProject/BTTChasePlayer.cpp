@@ -3,10 +3,15 @@
 
 #include "BTTChasePlayer.h"
 #include "BehaviorTree/BlackboardComponent.h"
+#include "AIController.h"
 
 EBTNodeResult::Type UBTTChasePlayer::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
-	//AActor* PlayerActor = OwnerComp->GetValueAsObject(TEXT("PlayerActor"));
+	AActor* Hero = Cast<AActor>(OwnerComp.GetBlackboardComponent()->GetValueAsObject(TEXT("PlayerActor")));
+	AAIController* AIController = Cast<AAIController>(OwnerComp.GetAIOwner());
+	if(AIController){
+		AIController->MoveToLocation(Hero->GetActorLocation(), 5.f);
+	}
 
 	return EBTNodeResult::Succeeded;
 }
