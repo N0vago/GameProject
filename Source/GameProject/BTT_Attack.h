@@ -4,19 +4,16 @@
 
 #include "CoreMinimal.h"
 #include "BehaviorTree/BTTaskNode.h"
-#include "BTTChasePlayer.generated.h"
+#include "BTT_Attack.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class GAMEPROJECT_API UBTTChasePlayer : public UBTTaskNode
+class GAMEPROJECT_API UBTT_Attack : public UBTTaskNode
 {
 	GENERATED_BODY()
 	public:
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 
-	private:
-	UPROPERTY(EditDefaultsOnly)
-	float WalkSpeed = 100.f;
 };

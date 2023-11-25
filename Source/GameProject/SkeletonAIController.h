@@ -24,6 +24,11 @@ class GAMEPROJECT_API ASkeletonAIController : public AAIController
 	private:
 	UPROPERTY(EditDefaultsOnly)
 	UBehaviorTree* SkeletonBT;
+	private:
+	UPROPERTY(EditDefaultsOnly)
+	float AISpeed = 100.f;
+
+	class AEnemyCharacter* OwnerCharacter;
 
 
 

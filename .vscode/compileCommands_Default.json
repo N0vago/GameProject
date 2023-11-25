@@ -16,6 +16,22 @@
 		"directory": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Source"
 	},
 	{
+		"file": "D:\\Developing\\Soft\\UnrealProjects\\GameProject\\Source\\GameProject\\BTT_Attack.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\Developing\\Soft\\UnrealProjects\\GameProject\\.vscode\\compileCommands_Default\\GameProject.257.rsp"
+		],
+		"directory": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Developing\\Soft\\UnrealProjects\\GameProject\\Source\\GameProject\\BTT_Attack.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\Developing\\Soft\\UnrealProjects\\GameProject\\.vscode\\compileCommands_Default\\GameProject.257.rsp"
+		],
+		"directory": "D:\\Developing\\Soft\\UE_5.1\\Engine\\Source"
+	},
+	{
 		"file": "D:\\Developing\\Soft\\UnrealProjects\\GameProject\\Source\\GameProject\\CuttingDamageType.cpp",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",

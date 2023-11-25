@@ -25,13 +25,20 @@ class GAMEPROJECT_API APlayerCharacter : public APaperZDCharacter
 		bool Death() const;
 
 		bool bIsAttacking;
+
+		virtual void Attack();
 	protected:
 		virtual void BeginPlay() override;
 
-		class UBoxComponent* HitBox;
-	private:
+		void HitCheck();
+
+		void UpdatePlayerRotation();
+
 		UPROPERTY(EditAnywhere)
 		float CharacterSpeed = 200.f;
+
+		class UBoxComponent* HitBox;
+	private:
 
 		UPROPERTY(EditAnywhere)
 		float AttackDamage = 20.f;
@@ -42,13 +49,7 @@ class GAMEPROJECT_API APlayerCharacter : public APaperZDCharacter
 		UPROPERTY(VisibleAnywhere)
 		float HealthPoints;
 
-		void Attack();
-
-		void UpdatePlayerRotation();
-
 		void MoveRight(float Value);
-
-		void HitCheck();
 
 		void SetUpAttacking();
 

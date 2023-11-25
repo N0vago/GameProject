@@ -8,15 +8,18 @@
 
 AEnemyCharacter::AEnemyCharacter() {
     TriggerArea = CreateDefaultSubobject<USphereComponent>(TEXT("TriggerArea"));
-    TriggerArea->SetupAttachment(this->FindComponentByClass<UPaperFlipbookComponent>());
+    TriggerArea->SetupAttachment(this->GetSprite());
     TriggerArea->InitSphereRadius(250.f);
     TriggerArea->OnComponentBeginOverlap.AddDynamic(this, &AEnemyCharacter::OnOverlapBegin); 
     TriggerArea->OnComponentEndOverlap.AddDynamic(this, &AEnemyCharacter::OnOverlapEnd);
 }
 void AEnemyCharacter::BeginPlay() {
     Super::BeginPlay();
-    
 
+
+}
+void AEnemyCharacter::Tick(float DeltaSecond) {
+    
 }
 
 void AEnemyCharacter::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult){
@@ -36,5 +39,10 @@ void AEnemyCharacter::OnOverlapEnd(class UPrimitiveComponent* OverlappedComp, cl
     ASkeletonAIController* AIController = Cast<ASkeletonAIController>(GetController());
     if (AIController) {
         AIController->OnEnemyOverlapEnd();
+    }
+}
+void AEnemyCharacter::Attack() {
+    if(!bIsAttacking) {
+        APlayerCharacter::HitCheck();
     }
 }

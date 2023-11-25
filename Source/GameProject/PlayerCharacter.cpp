@@ -75,7 +75,6 @@ void APlayerCharacter::HitCheck() {
     {
         if (HitActor && HitActor->CanBeDamaged() && HitActor != this)
         {
-            GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, (TEXT("Hited actor: %s"), *(HitActor->GetActorLabel(false))));
             UGameplayStatics::ApplyDamage(HitActor, AttackDamage, GetController(), this, UCuttingDamageType::StaticClass());
         }
     }
