@@ -34,4 +34,6 @@ class GAMEPROJECT_API AEnemyCharacter : public APlayerCharacter
 
 	virtual void BeginPlay() override;
 
+	class UBoxComponent* HitBox;
+
 };

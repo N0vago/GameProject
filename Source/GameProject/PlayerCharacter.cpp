@@ -4,7 +4,6 @@
 #include "PlayerCharacter.h"
 #include "Components/PrimitiveComponent.h"
 #include "MainCharacterController.h"
-#include "Components/BoxComponent.h"
 #include "PaperFlipbook.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Kismet/GameplayStatics.h"
@@ -59,7 +58,7 @@ void APlayerCharacter::UpdatePlayerRotation() {
 void APlayerCharacter::Attack() {
     if(!(GetCharacterMovement()->IsFalling()) && !bIsAttacking){
         SetUpAttacking();
-        HitCheck();
+        HitCheck(HitBox);
     }
 }
 
@@ -68,9 +67,9 @@ float APlayerCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const
     return HealthPoints -= DamageAmount;
 }
 
-void APlayerCharacter::HitCheck() {
+void APlayerCharacter::HitCheck(UBoxComponent* HitBox1) {
     TArray<AActor*> HitActors;
-    HitBox->GetOverlappingActors(HitActors);
+    HitBox1->GetOverlappingActors(HitActors);
     for (AActor* HitActor : HitActors)
     {
         if (HitActor && HitActor->CanBeDamaged() && HitActor != this)

@@ -16,10 +16,9 @@ AEnemyCharacter::AEnemyCharacter() {
 void AEnemyCharacter::BeginPlay() {
     Super::BeginPlay();
 
-
 }
 void AEnemyCharacter::Tick(float DeltaSecond) {
-    
+    HitBox = this->FindComponentByClass<UBoxComponent>();
 }
 
 void AEnemyCharacter::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult){
@@ -42,7 +41,7 @@ void AEnemyCharacter::OnOverlapEnd(class UPrimitiveComponent* OverlappedComp, cl
     }
 }
 void AEnemyCharacter::Attack() {
-    if(!bIsAttacking) {
-        APlayerCharacter::HitCheck();
-    }
+
+     APlayerCharacter::HitCheck(HitBox);
+    
 }

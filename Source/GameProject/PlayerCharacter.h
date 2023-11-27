@@ -3,15 +3,15 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Components/BoxComponent.h"
 #include "PaperZDCharacter.h"
 #include "PlayerCharacter.generated.h"
 
-/**
- * 
- */
+
 UCLASS()
 class GAMEPROJECT_API APlayerCharacter : public APaperZDCharacter
 {
+
 	GENERATED_BODY()
 	public:
 		APlayerCharacter();
@@ -30,14 +30,14 @@ class GAMEPROJECT_API APlayerCharacter : public APaperZDCharacter
 	protected:
 		virtual void BeginPlay() override;
 
-		void HitCheck();
+		void HitCheck(UBoxComponent* HitBox1);
 
 		void UpdatePlayerRotation();
 
 		UPROPERTY(EditAnywhere)
 		float CharacterSpeed = 200.f;
 
-		class UBoxComponent* HitBox;
+		UBoxComponent* HitBox;
 	private:
 
 		UPROPERTY(EditAnywhere)
