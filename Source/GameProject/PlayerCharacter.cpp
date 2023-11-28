@@ -22,8 +22,7 @@ void APlayerCharacter::BeginPlay() {
 }
 void APlayerCharacter::Tick(float DeltaSeconds){
     Super::Tick(DeltaSeconds);
-    UpdatePlayerRotation();
-    HitBox->SetHiddenInGame(!bIsAttacking);
+    UpdateCharacterRotation();
 }
 
 void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -43,16 +42,16 @@ void APlayerCharacter::MoveRight(float Value)
     AddMovementInput(Direction, Value * DeltaSeconds * CharacterSpeed);
 
 }
-void APlayerCharacter::UpdatePlayerRotation() {
-    FRotator currentRotation = GetSprite()->GetRelativeRotation();
-    const FVector velocity = GetVelocity();
+void APlayerCharacter::UpdateCharacterRotation() {
+    FRotator currentRotation = this->GetSprite()->GetRelativeRotation();
+    const FVector velocity = this->GetVelocity();
 
     if(velocity.X < 0.f)
-        GetSprite()->SetRelativeRotation(FRotator(0.f,180.f,0.f));
+        this->GetSprite()->SetRelativeRotation(FRotator(0.f,180.f,0.f));
     else if(velocity.X == 0.f)
-        GetSprite()->SetRelativeRotation(currentRotation);
+        this->GetSprite()->SetRelativeRotation(currentRotation);
     else
-        GetSprite()->SetRelativeRotation(FRotator(0.f, 0.f, 0.f));
+        this->GetSprite()->SetRelativeRotation(FRotator(0.f, 0.f, 0.f));
 }
 
 void APlayerCharacter::Attack() {

@@ -17,7 +17,7 @@ class GAMEPROJECT_API AEnemyCharacter : public APlayerCharacter
 	//Enemy character constructor
 	AEnemyCharacter();
 
-	virtual void Tick(float DeltaSecond) override;
+	virtual void Tick(float DeltaSeconds) override;
 
 	virtual void Attack() override;
 	//Trigger area of enemy character

@@ -7,6 +7,7 @@
 #include "Components/SphereComponent.h"
 
 AEnemyCharacter::AEnemyCharacter() {
+    PrimaryActorTick.bCanEverTick = true;
     TriggerArea = CreateDefaultSubobject<USphereComponent>(TEXT("TriggerArea"));
     TriggerArea->SetupAttachment(this->GetSprite());
     TriggerArea->InitSphereRadius(250.f);
@@ -15,10 +16,11 @@ AEnemyCharacter::AEnemyCharacter() {
 }
 void AEnemyCharacter::BeginPlay() {
     Super::BeginPlay();
-
-}
-void AEnemyCharacter::Tick(float DeltaSecond) {
     HitBox = this->FindComponentByClass<UBoxComponent>();
+}
+void AEnemyCharacter::Tick(float DeltaSeconds) {
+    Super::Tick(DeltaSeconds);
+    
 }
 
 void AEnemyCharacter::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult){

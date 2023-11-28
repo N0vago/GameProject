@@ -32,7 +32,7 @@ class GAMEPROJECT_API APlayerCharacter : public APaperZDCharacter
 
 		void HitCheck(UBoxComponent* HitBox1);
 
-		void UpdatePlayerRotation();
+		void UpdateCharacterRotation();
 
 		UPROPERTY(EditAnywhere)
 		float CharacterSpeed = 200.f;
