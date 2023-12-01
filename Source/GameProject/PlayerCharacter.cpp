@@ -9,6 +9,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "CuttingDamageType.h"
 #include "D:\Developing\Soft\UE_5.1\Engine\Plugins\2D\Paper2D\Source\Paper2D\Classes\PaperFlipbookComponent.h"
+#include "EnemyCharacter.h"
 
 APlayerCharacter::APlayerCharacter() {
     PrimaryActorTick.bCanEverTick = true;
@@ -23,6 +24,7 @@ void APlayerCharacter::BeginPlay() {
 void APlayerCharacter::Tick(float DeltaSeconds){
     Super::Tick(DeltaSeconds);
     UpdateCharacterRotation();
+    GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, (TEXT("Actor: %s"), *(this->GetActorLabel(false))));
 }
 
 void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
